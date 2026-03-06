@@ -1,0 +1,9 @@
+Esto es solo un archivo de texto .text
+
+3.1415926535
+8979323846
+2643383279
+
+siempre al guardar crtl + S
+
+puedo escribir cualquier cosa aca

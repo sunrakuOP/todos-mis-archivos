@@ -1,0 +1,6 @@
+Primera linea de texto
+Segunda linea de texto
+Tercera linea de codigo
+
+Append mode para escribir sobre el archivo
+Asi no sobreescribe sobre archivo original
