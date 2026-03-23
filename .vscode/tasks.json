@@ -4,27 +4,22 @@
     {
       "label": "Compilar C++ (archivo actual)",
       "type": "shell",
-      "command": "g++",
-      "args": [
-        "-std=c++17",
-        "-Wall",
-        "-Wextra",
-        "-g",
-        "${file}",
-        "-o",
-        "${fileDirname}\\${fileBasenameNoExtension}.exe"
-      ],
+      "command": "New-Item -ItemType Directory -Force -Path \"${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\" | Out-Null; g++ -std=c++17 -Wall -Wextra -g \"${file}\" -o \"${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe\"",
       "group": {
         "kind": "build",
-        "isDefault": true
+        "isDefault": false
       },
       "problemMatcher": ["$gcc"]
     },
     {
       "label": "Ejecutar C++ (archivo actual)",
       "type": "shell",
-      "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "command": "& \"${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe\"; Remove-Item \"${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe\" -ErrorAction SilentlyContinue",
       "dependsOn": "Compilar C++ (archivo actual)",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "presentation": {
         "reveal": "always",
         "panel": "shared",

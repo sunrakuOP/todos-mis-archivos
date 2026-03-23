@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+/* grid*/
+.padre-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 50px;
+  padding: 50px;
+
+}
+
+.foto {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.foto-ancha {
+  grid-column: 1/3;
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+}

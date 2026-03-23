@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Grid Responsive</title>
+    <style>
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #0d1117;
+        color: #e2e8f0;
+        font-family: 'Segoe UI', sans-serif;
+        padding: 40px 32px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 32px;
+        color: #ffffff;
+      }
+
+      /* ---- AQUÍ ESTÁ EL TRUCO ---- */
+      .grilla {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+
+      .tarjeta {
+        background-color: #141b2d;
+        border: 1px solid #1e2a3a;
+        border-radius: 12px;
+        padding: 24px;
+      }
+
+      .tarjeta h3 {
+        color: #918ef4;
+        margin-bottom: 8px;
+      }
+
+      .tarjeta p {
+        color: #94a3b8;
+        font-size: 0.9rem;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h2>Achica y agranda la ventana para ver el efecto</h2>
+
+    <div class="grilla">
+      <div class="tarjeta">
+        <h3>Tarjeta 1</h3>
+        <p>En pantalla grande aparecen varias en fila.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Tarjeta 2</h3>
+        <p>En pantalla mediana se acomodan solas.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Tarjeta 3</h3>
+        <p>En celular quedan una debajo de la otra.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Tarjeta 4</h3>
+        <p>Todo sin escribir una sola media query.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Tarjeta 5</h3>
+        <p>Grid lo calcula solo según el espacio disponible.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Tarjeta 6</h3>
+        <p>El mínimo de cada tarjeta es 220px.</p>
+      </div>
+    </div>
+
+  </body>
+</html>

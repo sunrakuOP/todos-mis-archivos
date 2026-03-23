@@ -1,0 +1,299 @@
+/* ---- RESET ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- GENERAL ---- */
+body {
+  background-color: #f8f5f0;
+  color: #1c1c1a;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ---- HEADER ---- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #1c1c1a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header span {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+
+/* ---- NAV ---- */
+nav {
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  color: #a8a29e;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* ---- HERO ---- */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 32px;
+  background-color: #1c1c1a;
+  gap: 20px;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  line-height: 1.15;
+  max-width: 700px;
+}
+
+#hero p {
+  color: #a8a29e;
+  font-size: 1.1rem;
+  max-width: 500px;
+}
+
+/* ---- BOTÓN ---- */
+.boton {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #1c1c1a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+  border: 2px solid #1c1c1a;
+}
+
+.boton:hover {
+  background-color: #3f3f3a;
+}
+
+/* ---- LAYOUT GRID ---- */
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+/* ---- ASIDE ---- */
+aside {
+  background-color: #f0ebe3;
+  padding: 32px 24px;
+  position: sticky;
+  top: 62px;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+  border-right: 1px solid #e2ddd6;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+aside div h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #a8a29e;
+  margin-bottom: 12px;
+}
+
+aside ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+aside ul li {
+  font-size: 0.9rem;
+  color: #1c1c1a;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+aside ul li:hover {
+  color: #78716c;
+}
+
+aside ul li a {
+  color: #1c1c1a;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+aside ul li a:hover {
+  color: #78716c;
+}
+
+/* ---- MAIN ---- */
+main {
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* ---- SECCIONES ---- */
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 28px;
+  color: #1c1c1a;
+}
+
+/* ---- COLECCIÓN GRID ---- */
+.coleccion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+/* ---- PRODUCTO ---- */
+.producto {
+  background-color: #ffffff;
+  border: 1px solid #e2ddd6;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.producto:hover {
+  border-color: #1c1c1a;
+  transform: translateY(-4px);
+}
+
+.producto img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.producto h3 {
+  font-size: 1rem;
+  padding: 16px 16px 4px;
+  color: #1c1c1a;
+}
+
+.producto p {
+  font-size: 0.95rem;
+  padding: 0 16px 16px;
+  color: #78716c;
+  font-weight: bold;
+}
+
+.producto .boton {
+  margin: 0 16px 16px;
+  text-align: center;
+  background-color: #1c1c1a;
+  font-size: 0.85rem;
+  padding: 10px 16px;
+}
+
+.producto .boton:hover {
+  background-color: #3f3f3a;
+}
+
+/* ---- OFERTAS GRID ---- */
+.ofertas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* ---- OFERTA ---- */
+.oferta {
+  background-color: #ffffff;
+  border: 1px solid #e2ddd6;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s;
+}
+
+.oferta:hover {
+  border-color: #1c1c1a;
+}
+
+.oferta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.oferta h3 {
+  font-size: 1.1rem;
+  padding: 20px 20px 8px;
+  color: #1c1c1a;
+}
+
+.oferta p {
+  font-size: 0.9rem;
+  padding: 0 20px 16px;
+  color: #78716c;
+  flex: 1;
+}
+
+.oferta .boton {
+  margin: 0 20px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background-color: #1c1c1a;
+  color: #78716c;
+  text-align: center;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+footer a {
+  color: #a8a29e;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #ffffff;
+}

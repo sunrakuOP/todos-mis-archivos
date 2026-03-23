@@ -1,0 +1,19 @@
+* {
+  background-color: rgb(100, 100, 100);
+}
+
+.foto {
+  /*Elemento*/
+  width: 400px;
+  height: 200px;
+   
+  padding: 10px 20px 10px 20px;
+
+  border-radius: 12px;
+  border: 2px solid black;
+  object-fit: cover;
+
+  margin: 5px;
+
+  display: block;
+  }

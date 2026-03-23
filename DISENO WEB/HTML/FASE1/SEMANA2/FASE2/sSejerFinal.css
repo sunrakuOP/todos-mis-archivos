@@ -1,0 +1,225 @@
+/* ---- RESET ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- GENERAL ---- */
+body {
+  background-color: #0d1117;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ---- HEADER ---- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 48px;
+  background-color: #0d1117;
+  border-bottom: 1px solid #1e2a3a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #918ef4;
+  letter-spacing: 0.05em;
+}
+
+/* ---- NAV ---- */
+nav {
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #918ef4;
+}
+
+/* ---- HERO ---- */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 32px;
+  background: radial-gradient(ellipse at top, #1a1f4e 0%, #0d1117 70%);
+}
+
+.hero-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 700px;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+#hero p {
+  font-size: 1.1rem;
+  color: #94a3b8;
+}
+
+/* ---- BOTÓN ---- */
+.boton {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #918ef4;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+  margin-top: 8px;
+}
+
+.boton:hover {
+  background-color: #7c78e0;
+}
+
+/* ---- SERVICIOS ---- */
+#servicios {
+  padding: 80px 48px;
+}
+
+#servicios h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.tarjetas-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.tarjeta {
+  background-color: #141b2d;
+  border: 1px solid #1e2a3a;
+  border-radius: 16px;
+  padding: 32px 28px;
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.tarjeta:hover {
+  border-color: #918ef4;
+  transform: translateY(-4px);
+}
+
+.tarjeta-emoji {
+  font-size: 2rem;
+}
+
+.tarjeta h3 {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.tarjeta p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* ---- NOSOTROS ---- */
+#nosotros {
+  padding: 80px 48px;
+  background-color: #0d1117;
+}
+
+.dos-columnas {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.columna-imagen img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid #1e2a3a;
+  flex-shrink: 0;
+}
+
+.columna-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.columna-texto h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.columna-texto p {
+  color: #94a3b8;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background-color: #0a0d14;
+  border-top: 1px solid #1e2a3a;
+  color: #64748b;
+  text-align: center;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+footer a {
+  color: #918ef4;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+

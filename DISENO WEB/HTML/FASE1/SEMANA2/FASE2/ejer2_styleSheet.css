@@ -1,0 +1,82 @@
+/* ─── BASE ─────────────────────────────────────────── */
+body {
+  background-color: #050a14;
+  color: #c8d8e8;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+
+/* ─── ENLACES ───────────────────────────────────────── */
+a {
+  color: #4a9edd;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* ─── LISTAS ────────────────────────────────────────── */
+ul {
+  list-style: none;
+}
+
+li {
+  color: #c8d8e8;
+}
+
+/* ─── FOOTER ────────────────────────────────────────── */
+footer {
+  color: #3a5068;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: #3a5068;
+}
+
+/* ─── CLASES ────────────────────────────────────────── */
+
+/* nombre principal en el header */
+.spann {
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #e8f4ff;
+  text-shadow: 0px 0px 18px #4a9edd55;
+}
+
+/* navegación centrada */
+.navv {
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* subtítulos de sección */
+.subtitulos {
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #4a9edd;
+}
+
+/* texto de párrafos */
+.texto {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #8aaabb;
+  word-spacing: 1px;
+}
+
+/* palabras clave resaltadas */
+.destacado {
+  color: #4a9edd;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
