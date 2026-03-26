@@ -92,7 +92,9 @@ public:
     L.mostrarMatriz();
     std::cout<<"Matriz U:"<<std::endl;
     U.mostrarMatriz();
-  }
+  } 
+
+  
 };
 
 
