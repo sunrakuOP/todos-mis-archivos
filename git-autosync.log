@@ -8,3 +8,13 @@
 [2026-03-30 14:59:24] Pull resultado: error: cannot pull with rebase: You have unstaged changes. error: Please commit or stash them.
 [2026-03-30 14:59:24] ADVERTENCIA: Pull tuvo conflictos o error. Revisa manualmente.
 [2026-03-30 14:59:24] Cambios detectados. Haciendo ADD + COMMIT + PUSH...
+[2026-03-30 14:59:25] Commit: [main 6676929] auto-sync: 2026-03-30 14:59  2 files changed, 6 insertions(+), 1 deletion(-)
+[2026-03-30 14:59:28] Push resultado: To https://github.com/sunrakuOP/todos-mis-archivos    ecdd5de..6676929  main -> main
+[2026-03-30 14:59:28] SUCCESS: Cambios subidos correctamente.
+[2026-03-30 14:59:28] === Sync completado ===
+[2026-03-30 14:59:28] 
+[2026-04-08 15:16:52] === Iniciando sync de: C:\Users\juann\OneDrive\Documents\VSCODE ===
+[2026-04-08 15:16:52] Haciendo PULL...
+[2026-04-08 15:16:52] Pull resultado: error: cannot pull with rebase: You have unstaged changes. error: Please commit or stash them.
+[2026-04-08 15:16:52] ADVERTENCIA: Pull tuvo conflictos o error. Revisa manualmente.
+[2026-04-08 15:16:52] Cambios detectados. Haciendo ADD + COMMIT + PUSH...
