@@ -94,7 +94,8 @@ public:
             return *this;
         }
         // si existe, sobre escribir con operador [] = nuevo
-        contactos[nombre] = nuevoNumero;
+        // o solo modificar con el iterador directamente
+        it->second = nuevoNumero;
         return *this;
     }
 
@@ -103,6 +104,7 @@ public:
             std::cout<<"Contacto no existente.."<<std::endl;
             return;
         }
+        // solo con it y find compruebo si existe, ya es suficiente
         auto it = contactos.find(nombre);
         if(it != contactos.end()) {
             std::cout<<"Telefeono: "<<it->second;
@@ -136,6 +138,27 @@ int main() {
     // pera: 2 veces
 
     std::cout << d.contarOcurrencias("manzana"); // 3
+
+
+     Agenda agenda("Mis Contactos");
+
+    agenda.agregarContacto("Carlos", "300-111-2222")
+          .agregarContacto("Ana", "310-333-4444")
+          .agregarContacto("Luis", "320-555-6666");
+
+    // intentar agregar duplicado
+    agenda.agregarContacto("Carlos", "999-999-9999"); // ya existe
+
+    // buscar existente y no existente
+    agenda.buscarContacto("Ana");
+    agenda.buscarContacto("Pedro"); // no existe
+
+    // modificar
+    agenda.modificarTelefono("Carlos", "300-000-0000");
+    agenda.buscarContacto("Carlos"); // debe mostrar el nuevo
+
+    // modificar uno que no existe
+    agenda.modificarTelefono("Pedro", "111-111-1111");
 
 
     return 0;

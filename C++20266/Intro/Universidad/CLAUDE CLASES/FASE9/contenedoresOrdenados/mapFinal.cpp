@@ -1,7 +1,9 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <algorithm>
 
+// map ordena en orden alfabetico, vector pair no lo ordena
 
 class Eleccion {
 protected:  
@@ -45,7 +47,13 @@ public:
         for(const auto&[nombre, numero]: votos) {
             vectorPares.push_back({nombre, numero});
         }
-        
+        // organizarlo de mayor a menor
+        std::sort(vectorPares.begin(), vectorPares.end(), [](const auto& a, const auto& b) {
+            return a.second > b.second;
+        });
+        for(const auto& [nombre, num]: vectorPares) {
+        std::cout << nombre << ": " << num << " votos" << std::endl;
+        }
     }
 };
 // como ordena map? por orden alfabetico, 
@@ -61,7 +69,12 @@ it->first usa la clave, it->second usa el valor
 
 /*
 como ordenar usando sort?
-std::sort
+std::sort.       #include<algorithm>
+
+std::sort(inicio, fin, comparador);
+inicio es .begin() y fin es .end()
+    comparador define el orden para alterar
+
 */
 
 
