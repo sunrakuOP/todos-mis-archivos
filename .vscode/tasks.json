@@ -14,7 +14,7 @@
     {
       "label": "Ejecutar C++ (archivo actual)",
       "type": "shell",
-      "command": "& \"${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe\"; Remove-Item \"${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe\" -ErrorAction SilentlyContinue",
+      "command": "& '${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe'; Remove-Item '${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe' -ErrorAction SilentlyContinue",
       "dependsOn": "Compilar C++ (archivo actual)",
       "group": {
         "kind": "build",
