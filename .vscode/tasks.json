@@ -4,7 +4,7 @@
     {
       "label": "Compilar C++ (archivo actual)",
       "type": "shell",
-      "command": "New-Item -ItemType Directory -Force -Path \"${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\" | Out-Null; g++ -std=c++17 -Wall -Wextra -g \"${file}\" -o \"${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe\"",
+      "command": "New-Item -ItemType Directory -Force -Path \"${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\" | Out-Null; g++ -std=c++20 -Wall -Wextra -pthread -g \"${file}\" -o \"${workspaceFolder}\\.vscode\\bin\\${relativeFileDirname}\\${fileBasenameNoExtension}.exe\"",
       "group": {
         "kind": "build",
         "isDefault": false

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Formularios</title>
+        <link rel="stylesheet" href="formSSptac.css"/>
+    </head>
+    <body>
+        <header>
+            <span>Formularios</span>
+            <nav>
+                <a href="#Inicio">Inicio</a>
+                <a href="#Servicios">Servicios</a>
+                <a href="#Galeria">Galeria</a>
+                <a href="#Contacto">Contacto</a>
+            </nav>
+        </header>
+        <main>
+            <section id="Inicio" class="hero">
+                <h1>Arte en tu piel, para siempre</h1>
+                <h2>Estudio profesional con más de 10 años de experiencia en Cali, Colombia</h2>
+                <button>Agendar cita</button>
+            </section>
+            <section id="Servicios">
+                <h2>Servicios: </h2>
+                <div class="contenedor-info">
+                    <div class="tarjeta-info">
+                        <h3>Tatuajes personalizados</h3>
+                        <p>Diseños únicos adaptados a tu idea, desde boceto hasta aplicación final	Desde $150.000</p>
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>Piercing profesional</h3>
+                        <p>Perforaciones seguras con materiales hipoalergénicos certificados</p>
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>Restauracion de tatuajes</h3>
+                        <p>Recuperamos tatuajes viejos o dañados con técnicas de coverup y retoque</p>
+                    </div>
+                </div>
+            </section>
+            <section class="Contacto">
+                <div class="caja-contacto">
+                    <div class="tarj-contacto">
+                        <h2>Agenda tu cita</h2>
+                        <p>Escribinos y te respondemos en menos de 24 horas</p>
+                    </div>
+                    <div class="tarj-contacto">
+                        <form>
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" name="nombre" id="nombre" placeholder="tu-nombre" required maxlength="50">
+
+                            <label for="correo">Correo: </label>
+                            <input type="email" name="correo" id="correo" placeholder="tu@correo.com" required maxlength="50">
+
+                            <label for="telefono">Telefono: </label>
+                            <input type="number" name="telefono" id="telefono" placeholder="1234567890" required maxlength="10">
+
+                            <label for="servicio">Servicio de interés</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">Seleccioná un servicio</option>
+                                <option value="tatuaje">Tatuaje personalizado</option>
+                                <option value="piercing">Piercing</option>
+                                <option value="restauracion">Restauración</option>
+                            </select>
+
+                            <label for="descripcion">Descripción de tu idea</label>
+                            <textarea id="descripcion" name="descripcion" rows="4" placeholder="Contanos tu idea..." required></textarea>
+
+                            <button type="submit">Enviar solicitud</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

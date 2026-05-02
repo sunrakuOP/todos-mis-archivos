@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.promo {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.hero {
+    background-image: url(vest2.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 16px;
+}
+.tarjetas-cat1{
+    background-image: url(hombre.jpeg);
+    background-size: cover;
+    flex: 1;
+    height: 400px;
+}
+.tarjetas-cat2{
+    background-image: url(mujer.jpeg);
+    background-size: cover;
+    flex: 1;
+    height: 400px;
+
+}
+.tarjetas-cat3{
+    background-image: url(catV.jpeg);
+    background-size: cover;
+    flex: 1;
+    height: 400px;
+}
+
+.destacados{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}

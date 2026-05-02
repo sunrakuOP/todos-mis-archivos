@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Sabores de Valle</title>
+        <link rel="stylesheet" href="pstEjCss.css"/>
+    </head>
+    <body>
+        <div class="barra-fija">
+            <p>20% de descuento hoy — Código: VALLE20</p>
+        </div>
+        <header>
+            <span>Sabores del Valle</span>
+            <nav>
+                <a href="#Inicio">Inicio</a>
+                <a href="#Carta">Carta</a>
+                <a href="#Chef">Chef</a>
+                <a href="#Reservar">Reservar</a>
+                <button class="btn-tema" id="toggleTema">🌙 Dark</button>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-contenido">
+                    <h1>Cocina del Pacífico Colombiano</h1>
+                    <p>Sabores auténticos, tradición viva y el mejor mariscos del Valle del Cauca</p>
+                    <button>Reservar mesa</button>
+                </div>
+            </section>
+            <section id="Carta">
+                <h2>Nuestra carta</h2>
+                <div class="carta-grid">
+                    <div class="plato">
+                        <img src="cazuelaMariscos.jpeg" alt="Cazuela mariscos" class="plato-img">
+                        <h3>Cazuela de mariscos</h3>
+                        <p>Mezcla de camarones, calamares y mejillones en salsa de coco.</p>
+                        <p>Precio: 38.000COP</p>
+                        <button>Pedir</button>
+                    </div>
+                    <div class="plato">
+                        <img src="arrozJaiba.jpeg" alt="Cazuela mariscos" class="plato-img">
+                        <h3>Arroz con Jaiba</h3>
+                        <p>Arroz cremoso con jaiba fresca, ají dulce y cilantro.</p>
+                        <p>Precio: 32.000COP</p>
+                        <button>Pedir</button>
+                    </div>
+                    <div class="plato">
+                        <img src="encocadoPesc.jpeg" alt="Cazuela mariscos" class="plato-img">
+                        <h3>Encocado de Pescado</h3>
+                        <p>Filete de corvina en salsa de coco con patacones.</p>
+                        <p>Precio: 35.000COP</p>
+                        <button>Pedir</button>
+                    </div>
+                    <div class="plato">
+                        <img src="pusundaoCarne.webp" alt="Cazuela mariscos" class="plato-img">
+                        <h3>Pusandao de Carne</h3>
+                        <p>Sopa tradicional con carne de res, plátano y yuca.</p>
+                        <p>Precio: 28.000COP</p>
+                        <button>Pedir</button>
+                    </div>
+                    <div class="plato">
+                        <img src="chontaduro.jpeg" alt="Cazuela mariscos" class="plato-img">
+                        <h3>Chontaduro Relleno</h3>
+                        <p>Chontaduro asado relleno de mariscos y queso costeño.</p>
+                        <p>Precio: 22.000COP</p>
+                        <button>Pedir</button>
+                    </div>
+                    <div class="plato">
+                        <img src="sancochoGallina.webp" alt="Cazuela mariscos" class="plato-img">
+                        <h3>Sancocho de Gallina</h3>
+                        <p>Gallina criolla con papa, yuca y mazorca. Tradición pura.</p>
+                        <p>Precio: 30.000COP</p>
+                        <button>Pedir</button>
+                    </div>
+                </div>
+            </section>
+            <section id="Chef">
+                <div class="chef-grid">
+                    <div>
+                        <img src="chefImg.jpeg" alt="chef" class="chef-img">
+                    </div>
+                    <div>
+                        <h2>Carlos Andrade</h2>
+                        <h3>Chef principal</h3>
+                        <p>Con más de 15 años de experiencia en cocina del Pacífico, 
+                            Carlos ha dedicado su vida a preservar las recetas ancestrales de su abuela 
+                            en Buenaventura.</p>
+                        <p>Formado en el Instituto Gastronómico de Cali y con pasantías en México y Perú,
+                             combina técnica internacional con alma colombiana.</p>
+                        <p>Su filosofía es simple: ingredientes frescos, fuego lento y mucho amor por la tierra.</p>
+                        <blockquote>"La cocina del Pacífico no es solo comida — es identidad, memoria y resistencia."</blockquote>
+                    </div>
+            </section>
+        </main>
+        <a class="btn-whatsapp" href="https://wa.me/573045503994" target="_blank">💬</a>
+        <footer>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>Calle 15 # 8-42, Granada, Cali</p>
+                <p>Tel: +57 304 550 3994</p>
+                <p>sabordelvalle@correo.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <p>Lunes a Viernes: 12:00 - 22:00</p>
+                <p>Sábados: 11:00 - 23:00</p>
+                <p>Domingos: 11:00 - 20:00</p>
+            </div>
+            <div class="footer-col">
+                <h4>Redes sociales</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+        </footer>
+    <script>
+        const btn = document.getElementById('toggleTema');
+        btn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            btn.textContent = isDark ? '☀️ Light' : '🌙 Dark';
+        });
+    </script>
+    </body>
+</html>
